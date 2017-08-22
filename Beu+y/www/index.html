@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme The Band</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #000080;
+  }
+
+#band {
+  color: #483D8B;
+}
+
+#team {
+  font-size: 30px;
+  color: #483D8B;
+
+}
+
+  #survey{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    background-color: #483D8B;
+    border-left: 120px;
+    left: 110%;
+
+  }
+  #row{
+
+}
+
+#img4 {
+  width: 150px;
+  height: 200px;
+}
+
+/*#four {
+  right: 75%;
+}*/
+
+h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;
+      font-size: 20px;
+      color: #fff;
+  }
+  .container {
+      padding: 80px 120px;
+
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+
+  .col img {
+    width: 100%;
+    height: auto;
+  }
+
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+      /*-webkit-filter: grayscale(90%);
+      filter: grayscale(90%); /* make all photos black and white */*/
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }*/
+  .carousel-caption h3 {
+      color: #000000 !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #7FFFD4;
+      color: #000000;
+  }
+  .bg-1 h3 {color: #483D8B;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #696969;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #333;
+      color: #fff !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #000080;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #7FFFD4;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #483D8B !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #000000 !important;
+      background-color: #808080 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">BEAU+Y</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">ABOUT US</a></li>
+        <li><a href="#tour">SURVEY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/Users/gwc/Documents/beauty_app_phonegap/men.html">Men</a></li>
+            <li><a href="/Users/gwc/Documents/beauty_app_phonegap/pluswomen.html">Plus Size Women</a></li>
+            <li><a href="/Users/gwc/Documents/beauty_app_phonegap/plusmen.html">Plus Size Men</a></li>
+            <li><a href="/Users/gwc/Documents/beauty_app_phonegap/religion.html">People of Religion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/a8/38/d3/a838d3f5933da7229a6e103c216eec90.gif" alt="I Make Shoe Contact Before Eye Contact." width="1500" height="700">
+        <div class="carousel-caption">
+          <h3>BEAU+Y</h3>
+          <p>Beauty, Fashion, Positivity ♥‿♥</p>
+        </div>
+      </div>
+
+      <div class="item ac">
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/20935135_1224159097729458_4349000617141033597_o.jpg?oh=ed15368c491ca0cc3b86845daee3967e&oe=5A1502B6" alt="I Make Shoe Contact Before Eye Contact." width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>PHOTO OF THE DAY</h3>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/20989283_1224159047729463_1404241104805315337_o.jpg?oh=b54106796534137fa9ec0decc0d6d887&oe=5A37C218" alt="Everyday is a Fashionshow and the World is the Runway. -Anonymous" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>STYLE OF THE WEEK</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3 id="team">THE TEAM</h3>
+  <p><em></em></p>
+  <p>We were part of the 2017 graduating class of Girls Who Code hosted by Viacom. This website is what we created for our final project.  </p>
+  <br>
+  <div id="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Tatiana Morales</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/20989099_1224156577729710_8433150050399480716_o.jpg?oh=10e052ad35e40dd57b818e75aa6b838d&oe=5A216071" class="img-circle person" alt="Random Name">
+      </a>
+      <div id="demo" class="collapse">
+        <p>16 years old</p>
+        <p>Puerto Rican</p>
+        <p>Runner</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Mary Jajati</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/20989172_1224156484396386_8916579951546347288_o.jpg?oh=b7ef7359eb0ab227f4f6e0c26a576b09&oe=5A215BD0" class="img-circle person" alt="Random Name">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>17 years old</p>
+        <p>Syrian</p>
+        <p>Gymnast</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Tsering Lama</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/20988213_1224157154396319_220521635689390998_o.jpg?oh=6bc8dddde84bde76c52976738912b731&oe=5A1D5E3C" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>16 years old</p>
+        <p>Tibetan</p>
+        <p>Wrestler</p>
+      </div>
+      <div id="four" class="col-sm-4">
+        <p class="text-center"><strong>Isabella Jimenez</strong></p><br>
+        <a href="#demo4" data-toggle="collapse">
+          <img id="img4" src="https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/20934813_1224156521063049_7492303679881002472_o.jpg?oh=d4aa2cda4beda50686744889e7095339&oe=5A379669" class="img-circle person" alt="Random Name">
+        </a>
+        <div id="demo4" class="collapse">
+          <p>15 years old</p>
+          <p>Argentinian</p>
+          <p>Soccer Player</p>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<section id="works" class="section">
+
+
+
+	<!-- <div class="row">
+
+		<div class="span12">
+
+			<div id="portfolio-wrap" class="isotope" style="position: relative; overflow: hidden; height: 675px;">
+
+				<!-- portfolio item -->
+<!--
+				<div class="portfolio-item grid print photography isotope-item" style="left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://www.trendycurvy.com/2017/07/05/trendycurvy-travels-new-orleans/" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://www.trendycurvy.com/wp-content/uploads/2017/07/Rue-2CC.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>Kristine</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div>
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid print design web isotope-item" style="left: 0px; top: 0px; transform: translate3d(180px, 0px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://www.instagram.com/eishesstyle/?hl=en" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://scontent-lga3-1.xx.fbcdn.net/v/t34.0-12/20863775_1219676324844402_1680077150_n.png?oh=96f2d8003901aa02cdb021b1373188e5&oe=5995377D" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>@eishesstyle</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid print design isotope-item" style="left: 0px; top: 0px; transform: translate3d(0px, 135px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="http://fabologie.com/" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://scontent-lga3-1.xx.fbcdn.net/v/t35.0-12/20793860_1219677444844290_987052793_o.png?oh=cc3514516c8a4a1466dc3047bd6a29a2&oe=59961004" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>Adi Heyman</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid photography web isotope-item" style="left: 0px; top: 0px; transform: translate3d(180px, 135px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="http://www.fashionloveandmartinis.com/2016/02/catherines-lookbook.html" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="http://1.bp.blogspot.com/-igdUaIT_PiE/VrE41_8-G3I/AAAAAAAABA8/zTVLZwu154E/s1600/catherines_amandaallison_05.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>Amanda Allison</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid photography web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 270px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://in.pinterest.com/adarkurdish/" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://s-media-cache-ak0.pinimg.com/736x/6e/23/e1/6e23e19e9b33f550956a72e3828920c1.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>🌸adarkurdish🌸</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid photography web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(180px, 270px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://www.instagram.com/irvinrandle/?hl=en" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="http://i.dailymail.co.uk/i/pix/2016/07/02/02/35DFF64400000578-3670941-image-a-58_1467423007098.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>Irvin Randle- "Mr Steal Your Grandma”</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid photography web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 405px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://www.instagram.com/yayavanchique/?hl=en" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://yayavanchique.files.wordpress.com/2016/11/s36a0739.jpg?w=1366&h=2048" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>@yayavanchique</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid photography isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(180px, 405px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="http://www.nazirasacasa.com" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://plussizeall.net/wp-content/uploads/2016/10/Accessories-For-Plus-Size.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>Nazira Sacasa</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid photography web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 540px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://www.instagram.com/itsseryna/" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://s-media-cache-ak0.pinimg.com/736x/6f/a2/9a/6fa29a886f92860c38e48c1b495cf9e2--onlineshopping-nature.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>@itsseryna</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+
+				<!-- portfolio item -->
+
+				<!-- <div class="portfolio-item grid design web isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(180px, 540px, 0px);">
+
+					<div class="portfolio">
+
+						<a href="https://www.instagram.com/bbyg6rl/" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
+
+						<img src="https://s-media-cache-ak0.pinimg.com/736x/8c/0e/02/8c0e02e77234a723efc47cac6e2693c2.jpg" alt="" width="255" height="330">
+
+						<div class="portfolio-overlay">
+
+							<div class="thumb-info">
+
+								<h5>@bbyg6rl</h5>
+
+								<i class="icon-plus icon-2x"></i>
+
+							</div>
+
+						</div>
+
+						</a>
+
+					</div>
+
+				</div> -->
+
+				<!-- end portfolio item -->
+        <div class = "row">
+          <div class = "col col-sm-6">
+            <img src="https://www.trendycurvy.com/wp-content/uploads/2017/07/Rue-2CC.jpg">
+          </div>
+          <div class = "col col-sm-6">
+            <img src="https://yayavanchique.files.wordpress.com/2016/11/s36a0739.jpg?w=1366&h=2048">
+          </div>
+			  </div>
+
+      <div class = "row">
+        <div class = "col col-sm-6">
+          <img src="https://plussizeall.net/wp-content/uploads/2016/10/Accessories-For-Plus-Size.jpg">
+        </div>
+        <div class = "col col-sm-6">
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/6f/a2/9a/6fa29a886f92860c38e48c1b495cf9e2--onlineshopping-nature.jpg">
+        </div>
+      </div>
+
+      <div class = "row">
+        <div class = "col col-sm-6">
+          <img src="https://s-media-cache-ak0.pinimg.com/736x/6e/23/e1/6e23e19e9b33f550956a72e3828920c1.jpg">
+        </div>
+        <div class = "col col-sm-6">
+          <img src="http://i.dailymail.co.uk/i/pix/2016/07/02/02/35DFF64400000578-3670941-image-a-58_1467423007098.jpg">
+        </div>
+      </div>
+
+
+		</div>
+
+	</div>
+
+</div>
+
+</section>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">TAKE OUR STYLE SURVEY!</h3>
+    <div class="row text-center">
+      </div>
+      <div class="col-sm-4">
+        <form name="my form" action="file:///Users/gwc/Documents/beauty_app_phonegap/survey.html">
+          <button class="btn" id="survey">Take Our Survey</button>
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="submit" class="btn btn-block">Pay
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+          <p>Need <a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We would love your feedback!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Questions? Comments?</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>New York, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: <br>tsering: Tseringlama20160@gmail.com <br>Tatiana: moralest2019@ursulinenewrochelle.org <br>Mary: mjajati629@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit" onclick="alert()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">Positivity!</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Alessia Cara</a></li>
+    <li><a data-toggle="tab" href="#menu1">Rowan Blanchard</a></li>
+    <li><a data-toggle="tab" href="#menu2">Jojo</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Alessia Cara, pop star</h2>
+      <p>Cara uses her global platform to inspire young women to love their insecurities and know they are not alone. "Scars To Your Beautiful" is a love letter made for young women like Alessia who are negatively affected by the media's unrealistic beauty standards. (Huffington Post, "5 Body Positive Icons Who Are Empowering Young Girls")</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Rowan Blanchard, actress</h2>
+      <p> Last year, Rowan, the star of "Girl Meets World," gave us a different view of the industry, saying in order to love yourself, young girls shouldn't feel the pressure to be 100 per cent happy about every single aspect of their appearance. Why? Because it takes time to be comfortable in your skin. (Huffington Post, "5 Body Positive Icons Who Are Empowering Young Girls")</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Jojo, singer</h2>
+      <p>JoJo was only 13 years old when she got her first number one single in the United States. She preaches body positivity and has said "the possibilities are endless, really, when you accept how you were made and are able to celebrate your unique beauty, and find it in everyone you meet." (Huffington Post, "5 Body Positive Icons Who Are Empowering Young Girls")</p>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
